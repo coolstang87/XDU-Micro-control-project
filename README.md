@@ -1,4 +1,4 @@
-# XUD——Micro control project
+# XDU——Micro control project
 
 由于我当时负责了FPGA与STM32部分，故分享这两个部分的代码，有需要的同学可以参考。
 
