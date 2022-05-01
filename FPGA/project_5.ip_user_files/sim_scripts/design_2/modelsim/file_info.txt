@@ -1,0 +1,2 @@
+design_2.v,verilog,xil_defaultlib,../../../bd/design_2/sim/design_2.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,70 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun 16 19:37:55 2021
+| Host         : LAPTOP-BIETDV48 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file PWM_control_sets_placed.rpt
+| Design       : PWM
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     5 |
+| Unused register locations in slices containing registers |    28 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|    16+ |            3 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              80 |           28 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              66 |           18 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               2 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------+---------------------+------------------+----------------+
+|  Clock Signal  |  Enable Signal  |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++----------------+-----------------+---------------------+------------------+----------------+
+|  clk_IBUF_BUFG | counter11       | p_1_out[0]          |                1 |              1 |
+|  clk_IBUF_BUFG | pwm1[1]_i_2_n_0 | p_1_out[1]          |                1 |              1 |
+|  clk_IBUF_BUFG |                 | clear               |                9 |             33 |
+|  clk_IBUF_BUFG |                 | counterx[0]_i_1_n_0 |                9 |             33 |
+|  clk_IBUF_BUFG |                 |                     |               28 |             80 |
++----------------+-----------------+---------------------+------------------+----------------+
+
+
